@@ -44,4 +44,8 @@
 
         End If
     End Sub
+
+    Private Sub lblLevelUser_Click(sender As Object, e As EventArgs) Handles lblLevelUser.Click
+
+    End Sub
 End Class

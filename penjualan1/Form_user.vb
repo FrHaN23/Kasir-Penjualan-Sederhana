@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports BCrypt
 Public Class Form_user
     Private Sub bttnSimpan_Click(sender As Object, e As EventArgs) Handles bttnSimpan.Click
         If txtKodeUser.Text = "" Or txtNamaUser.Text = "" Or txtUsername.Text = "" Or txtPassword.Text = "" Or cmbLevel.Text = "" Then
@@ -7,13 +8,15 @@ Public Class Form_user
             cmd = New OleDbCommand("SELECT * FROM tbl_user WHERE kode_user= '" & txtKodeUser.Text & "' ", conn)
             rd = cmd.ExecuteReader
             rd.Read()
+            Dim passwordHash As Object = Net.BCrypt.HashPassword(txtPassword.Text)
             'jika kosong
             If rd.HasRows = False Then
+
                 'input data
                 cmd = New OleDbCommand("INSERT INTO tbl_user values ('" & txtKodeUser.Text &
                                        "', '" & txtNamaUser.Text &
                                        "', '" & txtUsername.Text &
-                                       "','" & txtPassword.Text &
+                                       "','" & passwordHash &
                                        "','" & cmbLevel.Text &
                                        "')", conn)
                 'eksekusi queri
@@ -26,7 +29,7 @@ Public Class Form_user
                 'edit
                 cmd = New OleDbCommand("UPDATE tbl_user SET nama_user='" & txtNamaUser.Text &
                                        "',user_name='" & txtUsername.Text &
-                                        "',pwd='" & txtPassword.Text &
+                                        "',pwd='" & passwordHash &
                                         "',lvl='" & cmbLevel.Text &
                                         "' WHERE kode_user='" & txtKodeUser.Text & "'", conn)
                 cmd.ExecuteNonQuery()

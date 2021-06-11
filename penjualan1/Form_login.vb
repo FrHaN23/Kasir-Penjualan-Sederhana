@@ -1,14 +1,16 @@
 ﻿Imports System.Data.OleDb
+Imports BCrypt
 Public Class Form_login
     Private Sub bttnHapus_Click(sender As Object, e As EventArgs) Handles bttnHapus.Click
         End
     End Sub
     Sub login()
         Call koneksi()
-        cmd = New OleDbCommand("SELECT * FROM tbl_user WHERE user_name ='" & txtUsername.Text & "' AND pwd='" & txtPassword.Text & "' ", conn)
+        cmd = New OleDbCommand("SELECT * FROM tbl_user WHERE user_name ='" & txtUsername.Text & "'", conn)
         rd = cmd.ExecuteReader
         rd.Read()
-        If rd.HasRows = True Then
+        Dim isHashedPassValid As Boolean = Net.BCrypt.Verify(txtPassword.Text, rd.Item("pwd"))
+        If rd.HasRows = True And isHashedPassValid = True Then
             form_menu.lblNamaUser.Text = rd.Item("nama_user")
             form_menu.lblLevelUser.Text = rd.Item("lvl")
             Me.Hide()

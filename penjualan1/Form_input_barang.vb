@@ -1,6 +1,5 @@
 ﻿Imports System.Data.OleDb
 Public Class Form_input_barang
-
     Sub clearBox()
         txtKodeBarang.Clear()
         txtNamaBarang.Clear()

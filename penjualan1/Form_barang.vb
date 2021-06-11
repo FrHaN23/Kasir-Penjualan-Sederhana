@@ -1,5 +1,4 @@
-﻿Imports System.Data.OleDb
-Public Class Form_barang
+﻿Public Class Form_barang
     Sub tampil_barang()
         Call koneksi()
         cmd = New OleDb.OleDbCommand("SELECT * FROM tbl_barang", conn)

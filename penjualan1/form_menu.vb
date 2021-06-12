@@ -21,10 +21,6 @@
 
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles lblNamaUser.Click
-
-    End Sub
-
     Private Sub form_menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If lblLevelUser.Text = "Kasir" Then
             bttnBarang.Enabled = False
@@ -43,9 +39,5 @@
 
 
         End If
-    End Sub
-
-    Private Sub lblLevelUser_Click(sender As Object, e As EventArgs) Handles lblLevelUser.Click
-
     End Sub
 End Class

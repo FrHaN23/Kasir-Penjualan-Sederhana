@@ -22,7 +22,6 @@ Public Class Form_input_barang
 
     Private Sub bttnBersih_Click(sender As Object, e As EventArgs) Handles bttnBersih.Click
         Call clearBox()
-
     End Sub
 
     Private Sub Form_input_barang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -104,6 +103,5 @@ Public Class Form_input_barang
             Call clearBox()
             Call Form_barang.tampil_barang()
         End If
-
     End Sub
 End Class

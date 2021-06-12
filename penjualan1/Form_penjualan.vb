@@ -16,8 +16,6 @@ Public Class Form_penjualan
 
             End If
         End If
-
-
     End Sub
     Sub grandTotal()
         Dim jumlah As Decimal = 0
@@ -29,9 +27,8 @@ Public Class Form_penjualan
         If txtGrandTotal.Text = "" Then
             txtGrandTotal.Text = "0"
         End If
-
-
     End Sub
+
     Sub kotakBersih()
         txtKodeBarang.Clear()
         txtNamaBarang.Clear()
@@ -43,12 +40,9 @@ Public Class Form_penjualan
         txtKodeBarang.Focus()
 
     End Sub
+
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         End
-    End Sub
-
-    Private Sub GrpBoxTransaksi_Enter(sender As Object, e As EventArgs) Handles GrpBoxTransaksi.Enter
-
     End Sub
 
     Private Sub bttnTutup_Click(sender As Object, e As EventArgs) Handles bttnTutup.Click
@@ -63,7 +57,6 @@ Public Class Form_penjualan
         txtKodeBarang.Focus()
         Call grandTotal()
         txtKasir.Text = form_menu.lblNamaUser.Text
-
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

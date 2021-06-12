@@ -42,7 +42,6 @@ Public Class Form_user
 
     Private Sub bttnTutup_Click(sender As Object, e As EventArgs) Handles bttnTutup.Click
         Me.Close()
-
     End Sub
 
     Sub tampil_user()
@@ -68,12 +67,10 @@ Public Class Form_user
         Call koneksi()
         Call tampil_user()
         Call bersih()
-
     End Sub
 
     Private Sub bttnBersih_Click(sender As Object, e As EventArgs) Handles bttnBersih.Click
         Call bersih()
-
     End Sub
 
     Private Sub txtKodeUser_TextChanged(sender As Object, e As EventArgs) Handles txtKodeUser.TextChanged
@@ -102,7 +99,6 @@ Public Class Form_user
             MessageBox.Show("Data berhasil dihapus.")
             Call bersih()
             Call tampil_user()
-
         End If
     End Sub
 End Class

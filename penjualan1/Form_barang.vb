@@ -9,17 +9,12 @@
         Loop
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         End
     End Sub
 
     Private Sub bttnTutup_Click(sender As Object, e As EventArgs) Handles bttnTutup.Click
         Me.Close()
-
     End Sub
 
     Private Sub Form_barang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -37,7 +32,5 @@
 
     Private Sub bttnTambah_Click(sender As Object, e As EventArgs) Handles bttnTambah.Click
         Form_input_barang.ShowDialog()
-
-
     End Sub
 End Class

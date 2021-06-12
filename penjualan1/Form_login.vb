@@ -35,17 +35,12 @@ Public Class Form_login
     Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
         If e.KeyChar = Chr(13) Then
             Call login()
-
-
-
         End If
     End Sub
 
     Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
         If e.KeyChar = Chr(13) Then
-
             Call login()
-
         End If
     End Sub
 
@@ -53,7 +48,5 @@ Public Class Form_login
         txtUsername.Clear()
         txtPassword.Clear()
         txtUsername.Focus()
-
-
     End Sub
 End Class

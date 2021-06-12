@@ -9,4 +9,6 @@ password: inem
 
 and don't forget to put the database file in the bin/debug for debugging.
 because i use Bcrypt to encrypt the password, so you can't add manually the user on database
-and you need install Bcrypt: https://github.com/BcryptNet/bcrypt.net
+and you need install Bcrypt: 
+https://github.com/BcryptNet/bcrypt.net
+or using NuGet

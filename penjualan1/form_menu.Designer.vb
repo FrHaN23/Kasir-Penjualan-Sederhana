@@ -60,7 +60,7 @@ Partial Class form_menu
         Me.bttnPenjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bttnPenjualan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnPenjualan.ForeColor = System.Drawing.Color.White
-        Me.bttnPenjualan.Location = New System.Drawing.Point(42, 470)
+        Me.bttnPenjualan.Location = New System.Drawing.Point(42, 443)
         Me.bttnPenjualan.Name = "bttnPenjualan"
         Me.bttnPenjualan.Size = New System.Drawing.Size(360, 78)
         Me.bttnPenjualan.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class form_menu
         Me.bttnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bttnUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnUser.ForeColor = System.Drawing.Color.White
-        Me.bttnUser.Location = New System.Drawing.Point(42, 635)
+        Me.bttnUser.Location = New System.Drawing.Point(42, 591)
         Me.bttnUser.Name = "bttnUser"
         Me.bttnUser.Size = New System.Drawing.Size(360, 78)
         Me.bttnUser.TabIndex = 5
@@ -87,7 +87,7 @@ Partial Class form_menu
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.White
-        Me.Button7.Location = New System.Drawing.Point(1546, 0)
+        Me.Button7.Location = New System.Drawing.Point(1348, 0)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(38, 38)
         Me.Button7.TabIndex = 6
@@ -112,7 +112,7 @@ Partial Class form_menu
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = Global.penjualan1.My.Resources.Resources.logo___Copy
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(1469, 974)
+        Me.PictureBox3.Location = New System.Drawing.Point(1271, 701)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(86, 66)
         Me.PictureBox3.TabIndex = 10
@@ -125,7 +125,7 @@ Partial Class form_menu
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1446, 1043)
+        Me.Label2.Location = New System.Drawing.Point(1248, 770)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(126, 15)
         Me.Label2.TabIndex = 11
@@ -136,11 +136,11 @@ Partial Class form_menu
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(37, 978)
+        Me.Label3.Location = New System.Drawing.Point(3, 726)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 24)
+        Me.Label3.Size = New System.Drawing.Size(50, 16)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "USER"
         '
@@ -149,11 +149,11 @@ Partial Class form_menu
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(11, 1005)
+        Me.Label4.Location = New System.Drawing.Point(3, 744)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 24)
+        Me.Label4.Size = New System.Drawing.Size(49, 16)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Nama"
         '
@@ -162,11 +162,11 @@ Partial Class form_menu
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(11, 1032)
+        Me.Label5.Location = New System.Drawing.Point(2, 768)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 24)
+        Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Level"
         '
@@ -175,11 +175,11 @@ Partial Class form_menu
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(81, 1005)
+        Me.Label6.Location = New System.Drawing.Point(72, 741)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(16, 24)
+        Me.Label6.Size = New System.Drawing.Size(12, 16)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = ":"
         '
@@ -200,11 +200,11 @@ Partial Class form_menu
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(81, 1032)
+        Me.Label8.Location = New System.Drawing.Point(72, 768)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(16, 24)
+        Me.Label8.Size = New System.Drawing.Size(12, 16)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = ":"
         '
@@ -213,11 +213,11 @@ Partial Class form_menu
         Me.lblNamaUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblNamaUser.AutoSize = True
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
-        Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(100, 1005)
+        Me.lblNamaUser.Location = New System.Drawing.Point(91, 741)
         Me.lblNamaUser.Name = "lblNamaUser"
-        Me.lblNamaUser.Size = New System.Drawing.Size(107, 24)
+        Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
         Me.lblNamaUser.TabIndex = 18
         Me.lblNamaUser.Text = "NamaUser"
         '
@@ -226,11 +226,11 @@ Partial Class form_menu
         Me.lblLevelUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblLevelUser.AutoSize = True
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
-        Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(100, 1032)
+        Me.lblLevelUser.Location = New System.Drawing.Point(91, 768)
         Me.lblLevelUser.Name = "lblLevelUser"
-        Me.lblLevelUser.Size = New System.Drawing.Size(103, 24)
+        Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
         Me.lblLevelUser.TabIndex = 19
         Me.lblLevelUser.Text = "LevelUser"
         '
@@ -253,7 +253,7 @@ Partial Class form_menu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.BackgroundMenu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1584, 1061)
+        Me.ClientSize = New System.Drawing.Size(1386, 788)
         Me.Controls.Add(Me.bttnLogout)
         Me.Controls.Add(Me.lblLevelUser)
         Me.Controls.Add(Me.lblNamaUser)

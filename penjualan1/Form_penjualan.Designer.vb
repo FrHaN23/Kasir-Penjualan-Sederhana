@@ -49,13 +49,6 @@ Partial Class Form_penjualan
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtDibayar = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtKodeBarang = New System.Windows.Forms.TextBox()
         Me.txtNamaBarang = New System.Windows.Forms.TextBox()
         Me.txtJenisBarang = New System.Windows.Forms.TextBox()
@@ -73,6 +66,13 @@ Partial Class Form_penjualan
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GrpBoxGrand.SuspendLayout()
         Me.GrpBoxTransaksi.SuspendLayout()
@@ -274,7 +274,8 @@ Partial Class Form_penjualan
         '
         'Label18
         '
-        Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Black
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -328,6 +329,8 @@ Partial Class Form_penjualan
         '
         'txtKembalian
         '
+        Me.txtKembalian.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtKembalian.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.txtKembalian.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtKembalian.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -342,6 +345,8 @@ Partial Class Form_penjualan
         '
         'Label5
         '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -378,6 +383,8 @@ Partial Class Form_penjualan
         '
         'txtDibayar
         '
+        Me.txtDibayar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtDibayar.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.txtDibayar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDibayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -403,57 +410,16 @@ Partial Class Form_penjualan
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
-        Me.DataGridView1.Location = New System.Drawing.Point(26, 357)
+        Me.DataGridView1.Location = New System.Drawing.Point(9, 400)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1336, 266)
+        Me.DataGridView1.Size = New System.Drawing.Size(1353, 208)
         Me.DataGridView1.TabIndex = 33
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Kode Barang"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 250
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Nama Barang"
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 450
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Jenis Barang"
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 200
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Satuan"
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 160
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Harga"
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 300
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "QTY"
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 160
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Total Harga"
-        Me.Column7.Name = "Column7"
-        Me.Column7.Width = 315
         '
         'txtKodeBarang
         '
-        Me.txtKodeBarang.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtKodeBarang.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtKodeBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKodeBarang.Location = New System.Drawing.Point(148, 224)
         Me.txtKodeBarang.Name = "txtKodeBarang"
@@ -462,7 +428,8 @@ Partial Class Form_penjualan
         '
         'txtNamaBarang
         '
-        Me.txtNamaBarang.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtNamaBarang.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNamaBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamaBarang.Location = New System.Drawing.Point(148, 281)
         Me.txtNamaBarang.Name = "txtNamaBarang"
@@ -472,7 +439,8 @@ Partial Class Form_penjualan
         '
         'txtJenisBarang
         '
-        Me.txtJenisBarang.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtJenisBarang.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtJenisBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtJenisBarang.Location = New System.Drawing.Point(439, 224)
         Me.txtJenisBarang.Name = "txtJenisBarang"
@@ -482,7 +450,8 @@ Partial Class Form_penjualan
         '
         'txtSatuan
         '
-        Me.txtSatuan.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtSatuan.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSatuan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSatuan.Location = New System.Drawing.Point(439, 282)
         Me.txtSatuan.Name = "txtSatuan"
@@ -492,7 +461,8 @@ Partial Class Form_penjualan
         '
         'txtHarga
         '
-        Me.txtHarga.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtHarga.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHarga.Location = New System.Drawing.Point(753, 224)
         Me.txtHarga.Name = "txtHarga"
@@ -503,7 +473,8 @@ Partial Class Form_penjualan
         '
         'TxtQty
         '
-        Me.TxtQty.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TxtQty.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TxtQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TxtQty.Location = New System.Drawing.Point(753, 276)
         Me.TxtQty.Name = "TxtQty"
@@ -513,7 +484,8 @@ Partial Class Form_penjualan
         '
         'txtTotalHarga
         '
-        Me.txtTotalHarga.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtTotalHarga.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtTotalHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotalHarga.Location = New System.Drawing.Point(1081, 249)
         Me.txtTotalHarga.Name = "txtTotalHarga"
@@ -529,7 +501,8 @@ Partial Class Form_penjualan
         '
         'Label7
         '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -541,7 +514,8 @@ Partial Class Form_penjualan
         '
         'Label8
         '
-        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -553,7 +527,8 @@ Partial Class Form_penjualan
         '
         'Label9
         '
-        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -565,7 +540,8 @@ Partial Class Form_penjualan
         '
         'Label10
         '
-        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -577,7 +553,8 @@ Partial Class Form_penjualan
         '
         'Label11
         '
-        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -589,7 +566,8 @@ Partial Class Form_penjualan
         '
         'Label12
         '
-        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -601,7 +579,8 @@ Partial Class Form_penjualan
         '
         'Label13
         '
-        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -613,7 +592,8 @@ Partial Class Form_penjualan
         '
         'Label14
         '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.SystemColors.Control
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -625,7 +605,8 @@ Partial Class Form_penjualan
         '
         'Label15
         '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.SystemColors.Control
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -634,6 +615,46 @@ Partial Class Form_penjualan
         Me.Label15.Size = New System.Drawing.Size(37, 20)
         Me.Label15.TabIndex = 48
         Me.Label15.Text = "Rp."
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Kode Barang"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 200
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Nama Barang"
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 250
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Jenis Barang"
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 200
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Satuan"
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Harga"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 200
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "QTY"
+        Me.Column6.Name = "Column6"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Total Harga"
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 315
         '
         'Form_penjualan
         '
@@ -703,13 +724,6 @@ Partial Class Form_penjualan
     Friend WithEvents bttnSimpan As Button
     Friend WithEvents txtGrandTotal As TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents txtKodeBarang As TextBox
     Friend WithEvents txtNamaBarang As TextBox
     Friend WithEvents txtJenisBarang As TextBox
@@ -730,4 +744,11 @@ Partial Class Form_penjualan
     Friend WithEvents Label16 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
 End Class

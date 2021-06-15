@@ -175,4 +175,10 @@ Public Class Form_penjualan
     Private Sub txtDibayar_Click(sender As Object, e As EventArgs) Handles txtDibayar.Click
         txtDibayar.Text = ""
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+
+
+    End Sub
 End Class

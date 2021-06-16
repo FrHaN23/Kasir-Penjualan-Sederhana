@@ -1,9 +1,9 @@
 ﻿Imports System.Data.OleDb
 
 Public Class Form_penjualan
-
     Sub no_faktur()
-        cmd = New OleDbCommand("SELECT * FROM tbl_jual WHERE faktur_jual in(SELECT MAX(faktur_jual) FROM tbl_jual) ORDER BY faktur_jual DESC", conn)
+        cmd = New OleDbCommand("SELECT * FROM tbl_jual WHERE faktur_jual in(SELECT MAX(faktur_jual)
+                                FROM tbl_jual) ORDER BY faktur_jual DESC", conn)
         rd = cmd.ExecuteReader
         rd.Read()
         If Not rd.HasRows Then
@@ -13,16 +13,14 @@ Public Class Form_penjualan
                 txtNoFaktur.Text = Format(Now, "yyMMdd") + "0001"
             Else
                 txtNoFaktur.Text = rd.Item("faktur_jual") + 1
-
             End If
         End If
     End Sub
     Sub grandTotal()
         Dim jumlah As Decimal = 0
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
-            jumlah = jumlah + DataGridView1.Rows(i).Cells(6).Value
+            jumlah += DataGridView1.Rows(i).Cells(6).Value
             txtGrandTotal.Text = jumlah
-
         Next
         If txtGrandTotal.Text = "" Then
             txtGrandTotal.Text = "0"
@@ -38,7 +36,6 @@ Public Class Form_penjualan
         TxtQty.Clear()
         txtTotalHarga.Clear()
         txtKodeBarang.Focus()
-
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -66,7 +63,8 @@ Public Class Form_penjualan
 
     Private Sub txtKodeBarang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtKodeBarang.KeyPress
         If e.KeyChar = Chr(13) Then
-            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= '" & txtKodeBarang.Text & "' ", conn)
+            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= '" & txtKodeBarang.Text &
+                                   "' ", conn)
             rd = cmd.ExecuteReader
             rd.Read()
             If rd.HasRows = True Then
@@ -77,22 +75,14 @@ Public Class Form_penjualan
                 TxtQty.Focus()
             Else
                 Call kotakBersih()
-
-
                 MessageBox.Show("barang tidak ditemukan.")
-
             End If
         End If
     End Sub
 
-
-
-
-
     Private Sub TxtQty_TextChanged(sender As Object, e As EventArgs) Handles TxtQty.TextChanged
         Try
             txtTotalHarga.Text = Val(TxtQty.Text) * Val(txtHarga.Text)
-
         Catch ex As Exception
             txtTotalHarga.Text = ""
         End Try
@@ -100,11 +90,20 @@ Public Class Form_penjualan
 
     Private Sub TxtQty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtQty.KeyPress
         If e.KeyChar = Chr(13) Then
-            DataGridView1.Rows.Add(txtKodeBarang.Text, txtNamaBarang.Text, txtJenisBarang.Text, txtSatuan.Text, txtHarga.Text, TxtQty.Text, txtTotalHarga.Text)
+            DataGridView1.Rows.Add(txtKodeBarang.Text, txtNamaBarang.Text, txtJenisBarang.Text,
+                                   txtSatuan.Text, txtHarga.Text, TxtQty.Text, txtTotalHarga.Text)
             Call kotakBersih()
             Call grandTotal()
-
-
+            txtKodeBarang.Focus()
+        End If
+        'pencet spasi maka langsung ke dibayar
+        If e.KeyChar = Chr(32) Then
+            DataGridView1.Rows.Add(txtKodeBarang.Text, txtNamaBarang.Text, txtJenisBarang.Text,
+                                   txtSatuan.Text, txtHarga.Text, TxtQty.Text, txtTotalHarga.Text)
+            Call kotakBersih()
+            Call grandTotal()
+            txtDibayar.Text = ""
+            txtDibayar.Focus()
         End If
     End Sub
 
@@ -113,14 +112,12 @@ Public Class Form_penjualan
             Dim kembalian As Decimal
             kembalian = Val(txtDibayar.Text) - Val(txtGrandTotal.Text)
             txtKembalian.Text = kembalian
-
-
         Catch ex As Exception
 
         End Try
     End Sub
 
-    Private Sub bttnSimpan_Click(sender As Object, e As EventArgs) Handles bttnSimpan.Click
+    Sub simpanData()
         If txtGrandTotal.Text = "0" Then
             MessageBox.Show("Tidak ada barang diinput")
         Else
@@ -129,7 +126,9 @@ Public Class Form_penjualan
             Else
                 Call koneksi()
                 cmd = New OleDbCommand("INSERT INTO tbl_jual(faktur_jual,tgl_jual,jam,grand_total,dibayar,kembalian,kasir) values('" & txtNoFaktur.Text &
-                                       "','" & txtTanggal.Text & "','" & txtJam.Text & "','" & txtGrandTotal.Text & "','" & txtDibayar.Text & "','" & txtKembalian.Text & "','" & txtKasir.Text & "')", conn)
+                                       "','" & txtTanggal.Text & "','" & txtJam.Text & "','" & txtGrandTotal.Text &
+                                       "','" & txtDibayar.Text & "','" & txtKembalian.Text &
+                                       "','" & txtKasir.Text & "')", conn)
                 cmd.ExecuteNonQuery()
                 For baris As Integer = 0 To DataGridView1.Rows.Count - 2
                     cmd = New OleDbCommand("INSERT INTO tbl_rinci_jual VALUES('" & txtNoFaktur.Text & "', '" & DataGridView1.Rows(baris).Cells(0).Value & "', '" & DataGridView1.Rows(baris).Cells(5).Value &
@@ -140,7 +139,8 @@ Public Class Form_penjualan
                     rd = cmd.ExecuteReader
                     rd.Read()
                     If rd.HasRows = True Then
-                        cmd = New OleDbCommand("UPDATE tbl_barang SET stock='" & rd.Item("stock") - Val(DataGridView1.Rows(baris).Cells(5).Value) &
+                        cmd = New OleDbCommand("UPDATE tbl_barang SET stock='" & rd.Item("stock") -
+                                               Val(DataGridView1.Rows(baris).Cells(5).Value) &
                                                "' WHERE kode_barang='" & DataGridView1.Rows(baris).Cells(0).Value & "'", conn)
                         cmd.ExecuteNonQuery()
                     End If
@@ -152,11 +152,14 @@ Public Class Form_penjualan
                 txtDibayar.Text = "0"
                 Call no_faktur()
                 Call kotakBersih()
-
             End If
-
         End If
     End Sub
+
+    Private Sub bttnSimpan_Click(sender As Object, e As EventArgs) Handles bttnSimpan.Click
+        Call simpanData()
+    End Sub
+
 
     Private Sub DataGridView1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles DataGridView1.KeyPress
         If e.KeyChar = Chr(27) Then
@@ -165,7 +168,6 @@ Public Class Form_penjualan
             Try
                 DataGridView1.Rows.RemoveAt(baris)
                 Call grandTotal()
-
             Catch ex As Exception
 
             End Try
@@ -174,5 +176,11 @@ Public Class Form_penjualan
 
     Private Sub txtDibayar_Click(sender As Object, e As EventArgs) Handles txtDibayar.Click
         txtDibayar.Text = ""
+    End Sub
+
+    Private Sub txtDibayar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDibayar.KeyPress
+        If e.KeyChar = Chr(13) Then
+            Call simpanData()
+        End If
     End Sub
 End Class

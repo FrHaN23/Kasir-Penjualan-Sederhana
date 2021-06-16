@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        End
+        Me.Close()
     End Sub
 
     Private Sub bttnTutup_Click(sender As Object, e As EventArgs) Handles bttnTutup.Click

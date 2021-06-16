@@ -23,7 +23,7 @@ Partial Class Form_penjualan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GrpBoxGrand = New System.Windows.Forms.GroupBox()
@@ -141,7 +141,7 @@ Partial Class Form_penjualan
         Me.txtGrandTotal.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.txtGrandTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtGrandTotal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtGrandTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGrandTotal.Font = New System.Drawing.Font("Digital-7", 90.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtGrandTotal.ForeColor = System.Drawing.Color.Lime
         Me.txtGrandTotal.Location = New System.Drawing.Point(3, 22)
         Me.txtGrandTotal.Multiline = True
@@ -277,11 +277,11 @@ Partial Class Form_penjualan
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.Color.Black
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.Yellow
         Me.Label18.Location = New System.Drawing.Point(599, 53)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(76, 42)
+        Me.Label18.Size = New System.Drawing.Size(74, 39)
         Me.Label18.TabIndex = 51
         Me.Label18.Text = "Rp."
         '
@@ -290,11 +290,11 @@ Partial Class Form_penjualan
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.Color.Black
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.SystemColors.Highlight
         Me.Label17.Location = New System.Drawing.Point(19, 52)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(76, 42)
+        Me.Label17.Size = New System.Drawing.Size(71, 39)
         Me.Label17.TabIndex = 50
         Me.Label17.Text = "Rp."
         '
@@ -330,12 +330,12 @@ Partial Class Form_penjualan
         '
         Me.txtKembalian.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.txtKembalian.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtKembalian.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtKembalian.Font = New System.Drawing.Font("Digital-7", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKembalian.ForeColor = System.Drawing.Color.Yellow
-        Me.txtKembalian.Location = New System.Drawing.Point(597, 50)
+        Me.txtKembalian.Location = New System.Drawing.Point(597, 52)
         Me.txtKembalian.Name = "txtKembalian"
         Me.txtKembalian.ReadOnly = True
-        Me.txtKembalian.Size = New System.Drawing.Size(415, 49)
+        Me.txtKembalian.Size = New System.Drawing.Size(415, 44)
         Me.txtKembalian.TabIndex = 22
         Me.txtKembalian.Text = "2222222"
         Me.txtKembalian.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -380,11 +380,11 @@ Partial Class Form_penjualan
         '
         Me.txtDibayar.BackColor = System.Drawing.SystemColors.InactiveCaptionText
         Me.txtDibayar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDibayar.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDibayar.Font = New System.Drawing.Font("Digital-7", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDibayar.ForeColor = System.Drawing.SystemColors.Highlight
         Me.txtDibayar.Location = New System.Drawing.Point(13, 51)
         Me.txtDibayar.Name = "txtDibayar"
-        Me.txtDibayar.Size = New System.Drawing.Size(539, 49)
+        Me.txtDibayar.Size = New System.Drawing.Size(539, 44)
         Me.txtDibayar.TabIndex = 20
         Me.txtDibayar.Text = "2222222"
         Me.txtDibayar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -393,14 +393,14 @@ Partial Class Form_penjualan
         '
         Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DataGridView1.Location = New System.Drawing.Point(26, 318)

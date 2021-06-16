@@ -168,12 +168,6 @@
     <Compile Include="Form_penjualan.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_profile.Designer.vb">
-      <DependentUpon>Form_profile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form_profile.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form_user.Designer.vb">
       <DependentUpon>Form_user.vb</DependentUpon>
     </Compile>
@@ -216,9 +210,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_penjualan.resx">
       <DependentUpon>Form_penjualan.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_profile.resx">
-      <DependentUpon>Form_profile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_user.resx">
       <DependentUpon>Form_user.vb</DependentUpon>
@@ -273,6 +264,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Design\bg_menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

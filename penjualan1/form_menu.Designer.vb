@@ -26,7 +26,6 @@ Partial Class form_menu
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -96,19 +95,6 @@ Partial Class form_menu
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Develop by Farhan"
         '
-        'Label3
-        '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(22, 688)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 16)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "USER"
-        '
         'Label4
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -129,7 +115,7 @@ Partial Class form_menu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(225, 703)
+        Me.Label5.Location = New System.Drawing.Point(207, 706)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 14
@@ -142,7 +128,7 @@ Partial Class form_menu
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(91, 703)
+        Me.Label6.Location = New System.Drawing.Point(77, 706)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(12, 16)
         Me.Label6.TabIndex = 15
@@ -155,7 +141,7 @@ Partial Class form_menu
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(295, 703)
+        Me.Label8.Location = New System.Drawing.Point(259, 706)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(12, 16)
         Me.Label8.TabIndex = 17
@@ -168,7 +154,7 @@ Partial Class form_menu
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(110, 703)
+        Me.lblNamaUser.Location = New System.Drawing.Point(95, 706)
         Me.lblNamaUser.Name = "lblNamaUser"
         Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
         Me.lblNamaUser.TabIndex = 18
@@ -181,7 +167,7 @@ Partial Class form_menu
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
         Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(314, 703)
+        Me.lblLevelUser.Location = New System.Drawing.Point(277, 706)
         Me.lblLevelUser.Name = "lblLevelUser"
         Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
         Me.lblLevelUser.TabIndex = 19
@@ -244,7 +230,6 @@ Partial Class form_menu
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label1)
@@ -267,7 +252,6 @@ Partial Class form_menu
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label

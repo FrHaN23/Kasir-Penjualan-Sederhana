@@ -268,5 +268,35 @@
   <ItemGroup>
     <None Include="Design\bg_menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_data_barang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_data_barang1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_btn_dtbarang_hover.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_data_barang1_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_data_barang1_hover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_data_barang1-fix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_kasir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_kasir_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_user_hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

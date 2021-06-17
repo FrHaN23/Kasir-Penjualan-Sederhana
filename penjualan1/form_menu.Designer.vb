@@ -22,9 +22,6 @@ Partial Class form_menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.bttnBarang = New System.Windows.Forms.Button()
-        Me.bttnPenjualan = New System.Windows.Forms.Button()
-        Me.bttnUser = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -37,47 +34,14 @@ Partial Class form_menu
         Me.lblNamaUser = New System.Windows.Forms.Label()
         Me.lblLevelUser = New System.Windows.Forms.Label()
         Me.bttnLogout = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'bttnBarang
-        '
-        Me.bttnBarang.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
-        Me.bttnBarang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttnBarang.ForeColor = System.Drawing.Color.White
-        Me.bttnBarang.Location = New System.Drawing.Point(42, 186)
-        Me.bttnBarang.Name = "bttnBarang"
-        Me.bttnBarang.Size = New System.Drawing.Size(360, 78)
-        Me.bttnBarang.TabIndex = 0
-        Me.bttnBarang.Text = "Data Barang"
-        Me.bttnBarang.UseVisualStyleBackColor = True
-        '
-        'bttnPenjualan
-        '
-        Me.bttnPenjualan.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
-        Me.bttnPenjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnPenjualan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttnPenjualan.ForeColor = System.Drawing.Color.White
-        Me.bttnPenjualan.Location = New System.Drawing.Point(42, 336)
-        Me.bttnPenjualan.Name = "bttnPenjualan"
-        Me.bttnPenjualan.Size = New System.Drawing.Size(360, 78)
-        Me.bttnPenjualan.TabIndex = 1
-        Me.bttnPenjualan.Text = "Penjualan/Kasir"
-        Me.bttnPenjualan.UseVisualStyleBackColor = True
-        '
-        'bttnUser
-        '
-        Me.bttnUser.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
-        Me.bttnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttnUser.ForeColor = System.Drawing.Color.White
-        Me.bttnUser.Location = New System.Drawing.Point(42, 484)
-        Me.bttnUser.Name = "bttnUser"
-        Me.bttnUser.Size = New System.Drawing.Size(360, 78)
-        Me.bttnUser.TabIndex = 5
-        Me.bttnUser.Text = "User"
-        Me.bttnUser.UseVisualStyleBackColor = True
         '
         'Button7
         '
@@ -101,7 +65,7 @@ Partial Class form_menu
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 63.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(26, 9)
+        Me.Label1.Location = New System.Drawing.Point(555, 204)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(292, 95)
         Me.Label1.TabIndex = 7
@@ -113,7 +77,7 @@ Partial Class form_menu
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = Global.penjualan1.My.Resources.Resources.logo___Copy
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(1253, 582)
+        Me.PictureBox3.Location = New System.Drawing.Point(19, 21)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(86, 66)
         Me.PictureBox3.TabIndex = 10
@@ -139,7 +103,7 @@ Partial Class form_menu
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1125, 18)
+        Me.Label3.Location = New System.Drawing.Point(22, 688)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 16)
         Me.Label3.TabIndex = 12
@@ -152,7 +116,7 @@ Partial Class form_menu
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1125, 36)
+        Me.Label4.Location = New System.Drawing.Point(22, 706)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 16)
         Me.Label4.TabIndex = 13
@@ -165,7 +129,7 @@ Partial Class form_menu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(1124, 60)
+        Me.Label5.Location = New System.Drawing.Point(225, 703)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 14
@@ -178,7 +142,7 @@ Partial Class form_menu
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(1194, 33)
+        Me.Label6.Location = New System.Drawing.Point(91, 703)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(12, 16)
         Me.Label6.TabIndex = 15
@@ -191,7 +155,7 @@ Partial Class form_menu
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(1194, 60)
+        Me.Label8.Location = New System.Drawing.Point(295, 703)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(12, 16)
         Me.Label8.TabIndex = 17
@@ -204,7 +168,7 @@ Partial Class form_menu
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(1213, 33)
+        Me.lblNamaUser.Location = New System.Drawing.Point(110, 703)
         Me.lblNamaUser.Name = "lblNamaUser"
         Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
         Me.lblNamaUser.TabIndex = 18
@@ -217,7 +181,7 @@ Partial Class form_menu
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
         Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(1213, 60)
+        Me.lblLevelUser.Location = New System.Drawing.Point(314, 703)
         Me.lblLevelUser.Name = "lblLevelUser"
         Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
         Me.lblLevelUser.TabIndex = 19
@@ -236,6 +200,33 @@ Partial Class form_menu
         Me.bttnLogout.Text = "Log out"
         Me.bttnLogout.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.penjualan1.My.Resources.Resources.btn_data_barang1_fix
+        Me.PictureBox1.Location = New System.Drawing.Point(66, 166)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(312, 112)
+        Me.PictureBox1.TabIndex = 21
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.penjualan1.My.Resources.Resources.btn_kasir
+        Me.PictureBox2.Location = New System.Drawing.Point(66, 318)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(312, 112)
+        Me.PictureBox2.TabIndex = 22
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.penjualan1.My.Resources.Resources.btn_user
+        Me.PictureBox4.Location = New System.Drawing.Point(66, 478)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(312, 112)
+        Me.PictureBox4.TabIndex = 23
+        Me.PictureBox4.TabStop = False
+        '
         'form_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -243,6 +234,9 @@ Partial Class form_menu
         Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.bttnLogout)
         Me.Controls.Add(Me.lblLevelUser)
         Me.Controls.Add(Me.lblNamaUser)
@@ -255,9 +249,6 @@ Partial Class form_menu
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.bttnUser)
-        Me.Controls.Add(Me.bttnPenjualan)
-        Me.Controls.Add(Me.bttnBarang)
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "form_menu"
@@ -265,14 +256,13 @@ Partial Class form_menu
         Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents bttnBarang As Button
-    Friend WithEvents bttnPenjualan As Button
-    Friend WithEvents bttnUser As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
@@ -285,4 +275,7 @@ Partial Class form_menu
     Friend WithEvents lblNamaUser As Label
     Friend WithEvents lblLevelUser As Label
     Friend WithEvents bttnLogout As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

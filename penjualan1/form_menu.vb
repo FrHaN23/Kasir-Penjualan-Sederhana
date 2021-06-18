@@ -35,7 +35,7 @@
         End If
     End Sub
 
-    Private Sub bttnLogout_Click(sender As Object, e As EventArgs) Handles bttnLogout.Click
+    Private Sub bttnLogout_Click(sender As Object, e As EventArgs)
         If MessageBox.Show("Apakah Anda ingin Log out?", "Log out", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             Me.Close()
             Form_login.txtUsername.Clear()

@@ -32,7 +32,6 @@ Partial Class form_menu
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lblNamaUser = New System.Windows.Forms.Label()
         Me.lblLevelUser = New System.Windows.Forms.Label()
-        Me.bttnLogout = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -88,7 +87,7 @@ Partial Class form_menu
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1232, 658)
+        Me.Label2.Location = New System.Drawing.Point(1232, 709)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(126, 15)
         Me.Label2.TabIndex = 11
@@ -101,7 +100,7 @@ Partial Class form_menu
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(22, 633)
+        Me.Label4.Location = New System.Drawing.Point(22, 684)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 16)
         Me.Label4.TabIndex = 13
@@ -114,7 +113,7 @@ Partial Class form_menu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(207, 633)
+        Me.Label5.Location = New System.Drawing.Point(207, 684)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 14
@@ -127,7 +126,7 @@ Partial Class form_menu
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(77, 633)
+        Me.Label6.Location = New System.Drawing.Point(77, 684)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(12, 16)
         Me.Label6.TabIndex = 15
@@ -140,7 +139,7 @@ Partial Class form_menu
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(259, 633)
+        Me.Label8.Location = New System.Drawing.Point(259, 684)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(12, 16)
         Me.Label8.TabIndex = 17
@@ -153,7 +152,7 @@ Partial Class form_menu
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(95, 633)
+        Me.lblNamaUser.Location = New System.Drawing.Point(95, 684)
         Me.lblNamaUser.Name = "lblNamaUser"
         Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
         Me.lblNamaUser.TabIndex = 18
@@ -166,24 +165,11 @@ Partial Class form_menu
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
         Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(277, 633)
+        Me.lblLevelUser.Location = New System.Drawing.Point(277, 684)
         Me.lblLevelUser.Name = "lblLevelUser"
         Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
         Me.lblLevelUser.TabIndex = 19
         Me.lblLevelUser.Text = "LevelUser"
-        '
-        'bttnLogout
-        '
-        Me.bttnLogout.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
-        Me.bttnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnLogout.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bttnLogout.ForeColor = System.Drawing.Color.White
-        Me.bttnLogout.Location = New System.Drawing.Point(41, 824)
-        Me.bttnLogout.Name = "bttnLogout"
-        Me.bttnLogout.Size = New System.Drawing.Size(360, 78)
-        Me.bttnLogout.TabIndex = 20
-        Me.bttnLogout.Text = "Log out"
-        Me.bttnLogout.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -218,11 +204,10 @@ Partial Class form_menu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1370, 676)
+        Me.ClientSize = New System.Drawing.Size(1370, 727)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.bttnLogout)
         Me.Controls.Add(Me.lblLevelUser)
         Me.Controls.Add(Me.lblNamaUser)
         Me.Controls.Add(Me.Label8)
@@ -257,7 +242,6 @@ Partial Class form_menu
     Friend WithEvents Label8 As Label
     Friend WithEvents lblNamaUser As Label
     Friend WithEvents lblLevelUser As Label
-    Friend WithEvents bttnLogout As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox

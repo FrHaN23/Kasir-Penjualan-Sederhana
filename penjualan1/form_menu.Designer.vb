@@ -62,17 +62,16 @@ Partial Class form_menu
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 63.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(555, 204)
+        Me.Label1.Location = New System.Drawing.Point(111, 39)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(292, 95)
+        Me.Label1.Size = New System.Drawing.Size(128, 56)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "MENU"
         '
         'PictureBox3
         '
-        Me.PictureBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = Global.penjualan1.My.Resources.Resources.logo___Copy
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -89,7 +88,7 @@ Partial Class form_menu
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(1232, 731)
+        Me.Label2.Location = New System.Drawing.Point(1232, 658)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(126, 15)
         Me.Label2.TabIndex = 11
@@ -102,7 +101,7 @@ Partial Class form_menu
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(22, 706)
+        Me.Label4.Location = New System.Drawing.Point(22, 633)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 16)
         Me.Label4.TabIndex = 13
@@ -115,7 +114,7 @@ Partial Class form_menu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(207, 706)
+        Me.Label5.Location = New System.Drawing.Point(207, 633)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 14
@@ -128,7 +127,7 @@ Partial Class form_menu
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(77, 706)
+        Me.Label6.Location = New System.Drawing.Point(77, 633)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(12, 16)
         Me.Label6.TabIndex = 15
@@ -141,7 +140,7 @@ Partial Class form_menu
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(259, 706)
+        Me.Label8.Location = New System.Drawing.Point(259, 633)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(12, 16)
         Me.Label8.TabIndex = 17
@@ -154,7 +153,7 @@ Partial Class form_menu
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
         Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(95, 706)
+        Me.lblNamaUser.Location = New System.Drawing.Point(95, 633)
         Me.lblNamaUser.Name = "lblNamaUser"
         Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
         Me.lblNamaUser.TabIndex = 18
@@ -167,7 +166,7 @@ Partial Class form_menu
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
         Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(277, 706)
+        Me.lblLevelUser.Location = New System.Drawing.Point(277, 633)
         Me.lblLevelUser.Name = "lblLevelUser"
         Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
         Me.lblLevelUser.TabIndex = 19
@@ -217,9 +216,9 @@ Partial Class form_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu
+        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1370, 676)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)

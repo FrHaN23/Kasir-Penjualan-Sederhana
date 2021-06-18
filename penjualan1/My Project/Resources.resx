@@ -163,4 +163,7 @@
   <data name="btn_user_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_user_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg_menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_menu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

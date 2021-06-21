@@ -35,6 +35,7 @@ Partial Class form_menu
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.lblLogout = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,11 +99,11 @@ Partial Class form_menu
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(22, 684)
+        Me.Label4.Location = New System.Drawing.Point(128, 686)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 16)
+        Me.Label4.Size = New System.Drawing.Size(35, 15)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Nama"
         '
@@ -111,11 +112,11 @@ Partial Class form_menu
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(207, 684)
+        Me.Label5.Location = New System.Drawing.Point(313, 686)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 16)
+        Me.Label5.Size = New System.Drawing.Size(42, 15)
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Level"
         '
@@ -124,11 +125,11 @@ Partial Class form_menu
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(77, 684)
+        Me.Label6.Location = New System.Drawing.Point(183, 686)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(12, 16)
+        Me.Label6.Size = New System.Drawing.Size(14, 15)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = ":"
         '
@@ -137,11 +138,11 @@ Partial Class form_menu
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(259, 684)
+        Me.Label8.Location = New System.Drawing.Point(365, 686)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(12, 16)
+        Me.Label8.Size = New System.Drawing.Size(14, 15)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = ":"
         '
@@ -150,11 +151,11 @@ Partial Class form_menu
         Me.lblNamaUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblNamaUser.AutoSize = True
         Me.lblNamaUser.BackColor = System.Drawing.Color.Transparent
-        Me.lblNamaUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNamaUser.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNamaUser.ForeColor = System.Drawing.Color.White
-        Me.lblNamaUser.Location = New System.Drawing.Point(95, 684)
+        Me.lblNamaUser.Location = New System.Drawing.Point(201, 686)
         Me.lblNamaUser.Name = "lblNamaUser"
-        Me.lblNamaUser.Size = New System.Drawing.Size(82, 16)
+        Me.lblNamaUser.Size = New System.Drawing.Size(63, 15)
         Me.lblNamaUser.TabIndex = 18
         Me.lblNamaUser.Text = "NamaUser"
         '
@@ -163,11 +164,11 @@ Partial Class form_menu
         Me.lblLevelUser.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblLevelUser.AutoSize = True
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
-        Me.lblLevelUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLevelUser.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(277, 684)
+        Me.lblLevelUser.Location = New System.Drawing.Point(383, 686)
         Me.lblLevelUser.Name = "lblLevelUser"
-        Me.lblLevelUser.Size = New System.Drawing.Size(79, 16)
+        Me.lblLevelUser.Size = New System.Drawing.Size(70, 15)
         Me.lblLevelUser.TabIndex = 19
         Me.lblLevelUser.Text = "LevelUser"
         '
@@ -198,6 +199,20 @@ Partial Class form_menu
         Me.PictureBox4.TabIndex = 23
         Me.PictureBox4.TabStop = False
         '
+        'lblLogout
+        '
+        Me.lblLogout.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.lblLogout.AutoSize = True
+        Me.lblLogout.BackColor = System.Drawing.Color.Transparent
+        Me.lblLogout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblLogout.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogout.ForeColor = System.Drawing.Color.Yellow
+        Me.lblLogout.Location = New System.Drawing.Point(23, 686)
+        Me.lblLogout.Name = "lblLogout"
+        Me.lblLogout.Size = New System.Drawing.Size(77, 15)
+        Me.lblLogout.TabIndex = 24
+        Me.lblLogout.Text = "Ganti Akun"
+        '
         'form_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -205,6 +220,7 @@ Partial Class form_menu
         Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1370, 727)
+        Me.Controls.Add(Me.lblLogout)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -245,4 +261,5 @@ Partial Class form_menu
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents lblLogout As Label
 End Class

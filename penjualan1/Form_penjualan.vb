@@ -1,6 +1,12 @@
 ﻿Imports System.Data.OleDb
 
 Public Class Form_penjualan
+
+    Public Function ScreenResolution() As String
+        Dim intX As Integer = Screen.PrimaryScreen.Bounds.Width
+        Dim intY As Integer = Screen.PrimaryScreen.Bounds.Height
+    End Function
+
     Sub no_faktur()
         cmd = New OleDbCommand("SELECT * FROM tbl_jual WHERE faktur_jual in(SELECT MAX(faktur_jual)
                                 FROM tbl_jual) ORDER BY faktur_jual DESC", conn)

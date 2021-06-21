@@ -301,5 +301,8 @@
   <ItemGroup>
     <None Include="Resources\bg_menu2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_polos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

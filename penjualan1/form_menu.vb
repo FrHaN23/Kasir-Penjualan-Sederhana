@@ -84,12 +84,6 @@
     End Sub
 
     Private Sub lblLogout_Click(sender As Object, e As EventArgs) Handles lblLogout.Click
-        If MessageBox.Show("Apakah Anda ingin Logout?", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-            Me.Close()
-            Form_login.txtUsername.Clear()
-            Form_login.txtPassword.Clear()
-            Form_login.Show()
-            Form_login.txtUsername.Focus()
-        End If
+
     End Sub
 End Class

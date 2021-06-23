@@ -37,7 +37,7 @@ Partial Class Form_login
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.penjualan1.My.Resources.Resources.logo___Copy
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(652, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(374, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(136, 96)
         Me.PictureBox1.TabIndex = 2
@@ -45,40 +45,44 @@ Partial Class Form_login
         '
         'txtPassword
         '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.txtPassword.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.Location = New System.Drawing.Point(394, 259)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(249, 40)
+        Me.txtPassword.Size = New System.Drawing.Size(249, 41)
         Me.txtPassword.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(195, 262)
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(232, 262)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(151, 33)
+        Me.Label6.Size = New System.Drawing.Size(143, 34)
         Me.Label6.TabIndex = 37
         Me.Label6.Text = "Password"
         '
         'txtUsername
         '
-        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(394, 147)
+        Me.txtUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.txtUsername.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(394, 150)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(249, 40)
+        Me.txtUsername.Size = New System.Drawing.Size(249, 41)
         Me.txtUsername.TabIndex = 0
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(188, 150)
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(225, 150)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(158, 33)
+        Me.Label5.Size = New System.Drawing.Size(143, 34)
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Username"
         '
@@ -112,7 +116,7 @@ Partial Class Form_login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.Background
+        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.bttnHapus)

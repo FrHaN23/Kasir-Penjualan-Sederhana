@@ -26,6 +26,30 @@ Public Class Form_penjualan
             txtGrandTotal.Text = "0"
         End If
     End Sub
+    Sub screenResolutionFix()
+        Dim res = detectScreen()
+        If res <= 3686399 Then
+            Me.Size = New Point(1370, 749)
+            Label7.Location = New Point(32, 212) 'label kode barang
+            txtKodeBarang.Location = New Point(148, 204)
+            txtNamaBarang.Location = New Point(148, 261)
+            Label8.Location = New Point(32, 261) 'label nama barang
+            Label9.Location = New Point(368, 210) 'label jenis
+            txtJenisBarang.Location = New Point(439, 204)
+            txtSatuan.Location = New Point(439, 262)
+            Label10.Location = New Point(368, 262) 'label satuan
+            txtHarga.Location = New Point(753, 204)
+            Label11.Location = New Point(677, 204) 'label harga
+            Label15.Location = New Point(755, 208) 'label Rp. harga
+            TxtQty.Location = New Point(753, 256)
+            Label12.Location = New Point(670, 262) 'label qty
+            Label13.Location = New Point(995, 235) ' label total
+            Label14.Location = New Point(1083, 232) 'label Rp. harga
+            txtTotalHarga.Location = New Point(1081, 229)
+            DataGridView1.Size = New Point(1320, 266)
+            DataGridView1.Location = New Point(26, 318)
+        End If
+    End Sub
 
     Sub kotakBersih()
         txtKodeBarang.Clear()
@@ -47,6 +71,7 @@ Public Class Form_penjualan
     End Sub
 
     Private Sub Form_penjualan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call screenResolutionFix()
         txtDibayar.Text = "0"
         txtKembalian.Text = "0"
         Call koneksi()
@@ -55,12 +80,10 @@ Public Class Form_penjualan
         Call grandTotal()
         txtKasir.Text = form_menu.lblNamaUser.Text
     End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         txtTanggal.Text = Format(Now, "dd/MM/yyyy")
         txtJam.Text = Format(Now, "HH:mm:ss")
     End Sub
-
     Private Sub txtKodeBarang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtKodeBarang.KeyPress
         If e.KeyChar = Chr(13) Then
             cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= '" & txtKodeBarang.Text &
@@ -79,7 +102,6 @@ Public Class Form_penjualan
             End If
         End If
     End Sub
-
     Private Sub TxtQty_TextChanged(sender As Object, e As EventArgs) Handles TxtQty.TextChanged
         Try
             txtTotalHarga.Text = Val(TxtQty.Text) * Val(txtHarga.Text)
@@ -87,7 +109,6 @@ Public Class Form_penjualan
             txtTotalHarga.Text = ""
         End Try
     End Sub
-
     Private Sub TxtQty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtQty.KeyPress
         If e.KeyChar = Chr(13) Then
             DataGridView1.Rows.Add(txtKodeBarang.Text, txtNamaBarang.Text, txtJenisBarang.Text,
@@ -116,7 +137,6 @@ Public Class Form_penjualan
 
         End Try
     End Sub
-
     Sub simpanData()
         If txtGrandTotal.Text = "0" Then
             MessageBox.Show("Tidak ada barang diinput")
@@ -159,8 +179,6 @@ Public Class Form_penjualan
     Private Sub bttnSimpan_Click(sender As Object, e As EventArgs) Handles bttnSimpan.Click
         Call simpanData()
     End Sub
-
-
     Private Sub DataGridView1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles DataGridView1.KeyPress
         If e.KeyChar = Chr(27) Then
             Dim baris As Integer
@@ -173,11 +191,9 @@ Public Class Form_penjualan
             End Try
         End If
     End Sub
-
     Private Sub txtDibayar_Click(sender As Object, e As EventArgs) Handles txtDibayar.Click
         txtDibayar.Text = ""
     End Sub
-
     Private Sub txtDibayar_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtDibayar.KeyPress
         If e.KeyChar = Chr(13) Then
             Call simpanData()

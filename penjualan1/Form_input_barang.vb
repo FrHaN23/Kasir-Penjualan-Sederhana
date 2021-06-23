@@ -10,14 +10,8 @@ Public Class Form_input_barang
         cmbSatuan.Text = ""
         txtKodeBarang.Focus()
     End Sub
-
-    Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles txtHargaBeli.TextChanged
-
-    End Sub
-
     Private Sub bttnTutup_Click(sender As Object, e As EventArgs) Handles bttnTutup.Click
         Me.Close()
-
     End Sub
 
     Private Sub bttnBersih_Click(sender As Object, e As EventArgs) Handles bttnBersih.Click
@@ -27,7 +21,6 @@ Public Class Form_input_barang
     Private Sub Form_input_barang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
         Call clearBox()
-
     End Sub
 
     Private Sub bttnSimpan_Click(sender As Object, e As EventArgs) Handles bttnSimpan.Click
@@ -71,7 +64,6 @@ Public Class Form_input_barang
             End If
         End If
     End Sub
-
     Private Sub txtKodeBarang_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBarang.TextChanged
         'panggil data
         cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang='" & txtKodeBarang.Text & "' ", conn)

@@ -1,12 +1,7 @@
 ﻿Public Class form_menu
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        If MessageBox.Show("Apakah Anda ingin Log out?", "Log out", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-            Me.Close()
-            Form_login.txtUsername.Clear()
-            Form_login.txtPassword.Clear()
-            Form_login.Show()
-            Form_login.txtUsername.Focus()
-        End If
+        End
+
     End Sub
 
     Private Sub bttnBarang_Click(sender As Object, e As EventArgs)
@@ -84,5 +79,16 @@
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Form_user.ShowDialog()
+    End Sub
+
+    Private Sub lblLogout_Click(sender As Object, e As EventArgs) Handles lblLogout.Click
+        If MessageBox.Show("Apakah Anda ingin Log out?", "Log out", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+            Me.Close()
+            Form_login.txtUsername.Clear()
+            Form_login.txtPassword.Clear()
+            Form_login.Show()
+            Form_login.txtUsername.Focus()
+        End If
+
     End Sub
 End Class

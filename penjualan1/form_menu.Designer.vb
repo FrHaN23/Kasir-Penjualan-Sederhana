@@ -223,7 +223,7 @@ Partial Class form_menu
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "form_menu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "d"
+        Me.Text = "Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

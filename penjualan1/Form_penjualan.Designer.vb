@@ -22,6 +22,62 @@ Partial Class Form_penjualan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GrpBoxGrand = New System.Windows.Forms.GroupBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtGrandTotal = New System.Windows.Forms.TextBox()
+        Me.GrpBoxTransaksi = New System.Windows.Forms.GroupBox()
+        Me.txtKasir = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtTanggal = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtJam = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtNoFaktur = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GrpBoxPembayaran = New System.Windows.Forms.GroupBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.bttnHapus = New System.Windows.Forms.Button()
+        Me.bttnTutup = New System.Windows.Forms.Button()
+        Me.txtKembalian = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.bttnSimpan = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtDibayar = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txtKodeBarang = New System.Windows.Forms.TextBox()
+        Me.txtNamaBarang = New System.Windows.Forms.TextBox()
+        Me.txtJenisBarang = New System.Windows.Forms.TextBox()
+        Me.txtSatuan = New System.Windows.Forms.TextBox()
+        Me.txtHarga = New System.Windows.Forms.TextBox()
+        Me.TxtQty = New System.Windows.Forms.TextBox()
+        Me.txtTotalHarga = New System.Windows.Forms.TextBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout()
+        Me.GrpBoxGrand.SuspendLayout()
+        Me.GrpBoxTransaksi.SuspendLayout()
+        Me.GrpBoxPembayaran.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button7
@@ -337,19 +393,18 @@ Partial Class Form_penjualan
         '
         Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DataGridView1.Location = New System.Drawing.Point(0, 360)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1890, 570)
         Me.DataGridView1.TabIndex = 33
@@ -358,49 +413,42 @@ Partial Class Form_penjualan
         '
         Me.Column1.HeaderText = "Kode Barang"
         Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
         Me.Column1.Width = 250
         '
         'Column2
         '
         Me.Column2.HeaderText = "Nama Barang"
         Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
         Me.Column2.Width = 450
         '
         'Column3
         '
         Me.Column3.HeaderText = "Jenis Barang"
         Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
         Me.Column3.Width = 200
         '
         'Column4
         '
         Me.Column4.HeaderText = "Satuan"
         Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
         Me.Column4.Width = 160
         '
         'Column5
         '
         Me.Column5.HeaderText = "Harga"
         Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
         Me.Column5.Width = 300
         '
         'Column6
         '
         Me.Column6.HeaderText = "QTY"
         Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
         Me.Column6.Width = 160
         '
         'Column7
         '
         Me.Column7.HeaderText = "Total Harga"
         Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
         Me.Column7.Width = 315
         '
         'txtKodeBarang
@@ -408,7 +456,7 @@ Partial Class Form_penjualan
         Me.txtKodeBarang.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.txtKodeBarang.BackColor = System.Drawing.Color.White
         Me.txtKodeBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtKodeBarang.ForeColor = System.Drawing.Color.Black
+        Me.txtKodeBarang.ForeColor = System.Drawing.Color.White
         Me.txtKodeBarang.Location = New System.Drawing.Point(324, 241)
         Me.txtKodeBarang.Name = "txtKodeBarang"
         Me.txtKodeBarang.Size = New System.Drawing.Size(166, 26)

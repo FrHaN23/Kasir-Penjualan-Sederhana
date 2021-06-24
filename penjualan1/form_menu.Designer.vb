@@ -100,7 +100,7 @@ Partial Class form_menu
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(367, 686)
+        Me.Label5.Location = New System.Drawing.Point(313, 686)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 15)
         Me.Label5.TabIndex = 14
@@ -126,7 +126,7 @@ Partial Class form_menu
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(419, 686)
+        Me.Label8.Location = New System.Drawing.Point(365, 686)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(14, 15)
         Me.Label8.TabIndex = 17
@@ -152,7 +152,7 @@ Partial Class form_menu
         Me.lblLevelUser.BackColor = System.Drawing.Color.Transparent
         Me.lblLevelUser.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevelUser.ForeColor = System.Drawing.Color.White
-        Me.lblLevelUser.Location = New System.Drawing.Point(437, 686)
+        Me.lblLevelUser.Location = New System.Drawing.Point(383, 686)
         Me.lblLevelUser.Name = "lblLevelUser"
         Me.lblLevelUser.Size = New System.Drawing.Size(70, 15)
         Me.lblLevelUser.TabIndex = 19

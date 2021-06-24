@@ -6,8 +6,7 @@ Public Class Form_login
     End Sub
     Sub login()
         Call koneksi()
-        cmd = New OleDbCommand("SELECT * FROM tbl_user WHERE user_name = @userName", conn)
-        cmd.Parameters.AddWithValue("@userName", txtUsername.Text)
+        cmd = New OleDbCommand("SELECT * FROM tbl_user WHERE user_name ='" & txtUsername.Text & "'", conn)
         rd = cmd.ExecuteReader
         rd.Read()
         Dim isHashedPassValid As Boolean = Net.BCrypt.Verify(txtPassword.Text, rd.Item("pwd"))

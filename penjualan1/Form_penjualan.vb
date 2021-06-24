@@ -86,8 +86,8 @@ Public Class Form_penjualan
     End Sub
     Private Sub txtKodeBarang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtKodeBarang.KeyPress
         If e.KeyChar = Chr(13) Then
-            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang=@kodeBarang", conn)
-            cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
+            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= '" & txtKodeBarang.Text &
+                                   "' ", conn)
             rd = cmd.ExecuteReader
             rd.Read()
             If rd.HasRows = True Then
@@ -145,15 +145,10 @@ Public Class Form_penjualan
                 MessageBox.Show("Pembayaran Masih Kurang")
             Else
                 Call koneksi()
-                cmd = New OleDbCommand("INSERT INTO tbl_jual(faktur_jual,tgl_jual,jam,grand_total,dibayar,kembalian,kasir) values(@noFaktur
-                                        ,@tanggal,@jam,@granTotal,@diBayar,@kembalian,@namaKasir)", conn)
-                cmd.Parameters.AddWithValue("@noFaktur", txtNoFaktur.Text)
-                cmd.Parameters.AddWithValue("@tanggal", txtTanggal.Text)
-                cmd.Parameters.AddWithValue("@jam", txtJam.Text)
-                cmd.Parameters.AddWithValue("@granTotal", txtGrandTotal.Text)
-                cmd.Parameters.AddWithValue("@diBayar", txtDibayar.Text)
-                cmd.Parameters.AddWithValue("@kembalian", txtKembalian.Text)
-                cmd.Parameters.AddWithValue("@namaKasir", txtKasir.Text)
+                cmd = New OleDbCommand("INSERT INTO tbl_jual(faktur_jual,tgl_jual,jam,grand_total,dibayar,kembalian,kasir) values('" & txtNoFaktur.Text &
+                                       "','" & txtTanggal.Text & "','" & txtJam.Text & "','" & txtGrandTotal.Text &
+                                       "','" & txtDibayar.Text & "','" & txtKembalian.Text &
+                                       "','" & txtKasir.Text & "')", conn)
                 cmd.ExecuteNonQuery()
                 For baris As Integer = 0 To DataGridView1.Rows.Count - 2
                     cmd = New OleDbCommand("INSERT INTO tbl_rinci_jual VALUES('" & txtNoFaktur.Text & "', '" & DataGridView1.Rows(baris).Cells(0).Value & "', '" & DataGridView1.Rows(baris).Cells(5).Value &

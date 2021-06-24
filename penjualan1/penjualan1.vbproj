@@ -226,9 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +319,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_menu3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_menu4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_menu5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_flash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_flashFix.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

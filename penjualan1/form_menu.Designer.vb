@@ -203,7 +203,7 @@ Partial Class form_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu2
+        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1370, 727)
         Me.Controls.Add(Me.lblLogout)

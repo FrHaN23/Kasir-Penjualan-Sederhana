@@ -48,6 +48,26 @@ Public Class Form_penjualan
             txtTotalHarga.Location = New Point(1081, 229)
             DataGridView1.Size = New Point(1320, 266)
             DataGridView1.Location = New Point(26, 318)
+        Else
+            Me.Size = New Point(1940, 1100)
+            Label7.Location = New Point(197, 220) 'label kode barang
+            txtKodeBarang.Location = New Point(302, 214)
+            txtNamaBarang.Location = New Point(302, 271)
+            Label8.Location = New Point(192, 277) 'label nama barang
+            Label9.Location = New Point(522, 220) 'label jenis
+            txtJenisBarang.Location = New Point(593, 214)
+            txtSatuan.Location = New Point(593, 272)
+            Label10.Location = New Point(522, 277) 'label satuan
+            txtHarga.Location = New Point(906, 220)
+            Label11.Location = New Point(830, 220) 'label harga
+            Label15.Location = New Point(910, 222) 'label Rp. harga
+            TxtQty.Location = New Point(906, 277)
+            Label12.Location = New Point(830, 280) 'label qty
+            Label13.Location = New Point(1148, 255) ' label total
+            Label14.Location = New Point(1235, 252) 'label Rp. total
+            txtTotalHarga.Location = New Point(1234, 250)
+            DataGridView1.Size = New Point(1876, 570)
+            DataGridView1.Location = New Point(22, 330)
         End If
     End Sub
 

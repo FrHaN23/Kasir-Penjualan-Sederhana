@@ -456,7 +456,7 @@ Partial Class Form_penjualan
         Me.txtKodeBarang.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.txtKodeBarang.BackColor = System.Drawing.Color.White
         Me.txtKodeBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtKodeBarang.ForeColor = System.Drawing.Color.White
+        Me.txtKodeBarang.ForeColor = System.Drawing.Color.Black
         Me.txtKodeBarang.Location = New System.Drawing.Point(324, 241)
         Me.txtKodeBarang.Name = "txtKodeBarang"
         Me.txtKodeBarang.Size = New System.Drawing.Size(166, 26)

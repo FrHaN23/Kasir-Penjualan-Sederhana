@@ -405,6 +405,7 @@ Partial Class Form_penjualan
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7})
         Me.DataGridView1.Location = New System.Drawing.Point(0, 360)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1890, 570)
         Me.DataGridView1.TabIndex = 33
@@ -413,42 +414,49 @@ Partial Class Form_penjualan
         '
         Me.Column1.HeaderText = "Kode Barang"
         Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
         Me.Column1.Width = 250
         '
         'Column2
         '
         Me.Column2.HeaderText = "Nama Barang"
         Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
         Me.Column2.Width = 450
         '
         'Column3
         '
         Me.Column3.HeaderText = "Jenis Barang"
         Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
         Me.Column3.Width = 200
         '
         'Column4
         '
         Me.Column4.HeaderText = "Satuan"
         Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         Me.Column4.Width = 160
         '
         'Column5
         '
         Me.Column5.HeaderText = "Harga"
         Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
         Me.Column5.Width = 300
         '
         'Column6
         '
         Me.Column6.HeaderText = "QTY"
         Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
         Me.Column6.Width = 160
         '
         'Column7
         '
         Me.Column7.HeaderText = "Total Harga"
         Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
         Me.Column7.Width = 315
         '
         'txtKodeBarang

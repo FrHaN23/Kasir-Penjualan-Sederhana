@@ -163,7 +163,7 @@ Partial Class form_menu
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.penjualan1.My.Resources.Resources.btn_data_barang1_fix
-        Me.PictureBox1.Location = New System.Drawing.Point(66, 166)
+        Me.PictureBox1.Location = New System.Drawing.Point(66, 108)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(312, 112)
         Me.PictureBox1.TabIndex = 21
@@ -172,7 +172,7 @@ Partial Class form_menu
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.penjualan1.My.Resources.Resources.btn_kasir
-        Me.PictureBox2.Location = New System.Drawing.Point(66, 318)
+        Me.PictureBox2.Location = New System.Drawing.Point(66, 239)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(312, 112)
         Me.PictureBox2.TabIndex = 22
@@ -181,7 +181,7 @@ Partial Class form_menu
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.penjualan1.My.Resources.Resources.btn_user
-        Me.PictureBox4.Location = New System.Drawing.Point(66, 478)
+        Me.PictureBox4.Location = New System.Drawing.Point(66, 368)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(312, 112)
         Me.PictureBox4.TabIndex = 23
@@ -203,9 +203,10 @@ Partial Class form_menu
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(437, 512)
+        Me.PictureBox5.Image = Global.penjualan1.My.Resources.Resources.btn_laporan
+        Me.PictureBox5.Location = New System.Drawing.Point(65, 500)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(217, 100)
+        Me.PictureBox5.Size = New System.Drawing.Size(313, 112)
         Me.PictureBox5.TabIndex = 25
         Me.PictureBox5.TabStop = False
         '

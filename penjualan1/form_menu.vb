@@ -96,4 +96,12 @@
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
         Form_laporan.ShowDialog()
     End Sub
+
+    Private Sub PictureBox5_MouseHover(sender As Object, e As EventArgs) Handles PictureBox5.MouseHover
+        PictureBox5.Image = My.Resources.btn_laporan_hover
+    End Sub
+
+    Private Sub PictureBox5_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox5.MouseLeave
+        PictureBox5.Image = My.Resources.btn_laporan
+    End Sub
 End Class

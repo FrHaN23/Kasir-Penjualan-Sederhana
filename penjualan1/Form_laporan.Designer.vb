@@ -22,7 +22,6 @@ Partial Class Form_laporan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-
         Me.txtPencarianLaporan = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -40,7 +39,6 @@ Partial Class Form_laporan
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-
         'txtPencarianLaporan
         '
         Me.txtPencarianLaporan.Location = New System.Drawing.Point(88, 111)
@@ -169,6 +167,7 @@ Partial Class Form_laporan
         Me.Controls.Add(Me.txtPencarianLaporan)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form_laporan"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Laporan Penjualan"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()

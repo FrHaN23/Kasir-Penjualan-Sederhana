@@ -22,6 +22,7 @@ Partial Class Form_input_barang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_input_barang))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,11 +49,11 @@ Partial Class Form_input_barang
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(367, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(213, 37)
+        Me.Label1.Size = New System.Drawing.Size(233, 37)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Input Barang"
         '
@@ -60,10 +61,11 @@ Partial Class Form_input_barang
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(44, 71)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(131, 24)
+        Me.Label2.Size = New System.Drawing.Size(120, 22)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Kode Barang"
         '
@@ -71,10 +73,11 @@ Partial Class Form_input_barang
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(44, 128)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(136, 24)
+        Me.Label3.Size = New System.Drawing.Size(120, 22)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Nama Barang"
         '
@@ -82,10 +85,11 @@ Partial Class Form_input_barang
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(44, 181)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 24)
+        Me.Label4.Size = New System.Drawing.Size(130, 22)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Jenis Barang"
         '
@@ -93,10 +97,11 @@ Partial Class Form_input_barang
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(44, 224)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(74, 24)
+        Me.Label5.Size = New System.Drawing.Size(70, 22)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Satuan"
         '
@@ -104,10 +109,11 @@ Partial Class Form_input_barang
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(44, 273)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(107, 24)
+        Me.Label6.Size = New System.Drawing.Size(110, 22)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Harga Beli"
         '
@@ -115,10 +121,11 @@ Partial Class Form_input_barang
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(44, 315)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(110, 24)
+        Me.Label7.Size = New System.Drawing.Size(110, 22)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Harga Jual"
         '
@@ -126,10 +133,11 @@ Partial Class Form_input_barang
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(44, 363)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(50, 24)
+        Me.Label8.Size = New System.Drawing.Size(50, 22)
         Me.Label8.TabIndex = 16
         Me.Label8.Text = "Stok"
         '
@@ -195,9 +203,9 @@ Partial Class Form_input_barang
         '
         'bttnSimpan
         '
-        Me.bttnSimpan.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnSimpan.BackgroundImage = CType(resources.GetObject("bttnSimpan.BackgroundImage"), System.Drawing.Image)
         Me.bttnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnSimpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttnSimpan.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnSimpan.ForeColor = System.Drawing.Color.White
         Me.bttnSimpan.Location = New System.Drawing.Point(45, 409)
         Me.bttnSimpan.Name = "bttnSimpan"
@@ -208,9 +216,9 @@ Partial Class Form_input_barang
         '
         'bttnHapus
         '
-        Me.bttnHapus.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnHapus.BackgroundImage = CType(resources.GetObject("bttnHapus.BackgroundImage"), System.Drawing.Image)
         Me.bttnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttnHapus.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnHapus.ForeColor = System.Drawing.Color.White
         Me.bttnHapus.Location = New System.Drawing.Point(272, 409)
         Me.bttnHapus.Name = "bttnHapus"
@@ -221,9 +229,9 @@ Partial Class Form_input_barang
         '
         'bttnBersih
         '
-        Me.bttnBersih.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnBersih.BackgroundImage = CType(resources.GetObject("bttnBersih.BackgroundImage"), System.Drawing.Image)
         Me.bttnBersih.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnBersih.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttnBersih.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnBersih.ForeColor = System.Drawing.Color.White
         Me.bttnBersih.Location = New System.Drawing.Point(490, 409)
         Me.bttnBersih.Name = "bttnBersih"
@@ -234,9 +242,9 @@ Partial Class Form_input_barang
         '
         'bttnTutup
         '
-        Me.bttnTutup.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnTutup.BackgroundImage = CType(resources.GetObject("bttnTutup.BackgroundImage"), System.Drawing.Image)
         Me.bttnTutup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bttnTutup.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bttnTutup.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnTutup.ForeColor = System.Drawing.Color.White
         Me.bttnTutup.Location = New System.Drawing.Point(710, 409)
         Me.bttnTutup.Name = "bttnTutup"
@@ -249,7 +257,7 @@ Partial Class Form_input_barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.Background
+        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_menu5
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(951, 539)
         Me.Controls.Add(Me.bttnTutup)

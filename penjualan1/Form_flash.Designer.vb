@@ -71,7 +71,7 @@ Partial Class Form_flash
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.Background
+        Me.BackgroundImage = Global.penjualan1.My.Resources.Resources.bg_flashFix
         Me.ClientSize = New System.Drawing.Size(809, 483)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)

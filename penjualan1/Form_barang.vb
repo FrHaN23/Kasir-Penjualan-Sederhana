@@ -34,4 +34,8 @@
     Private Sub bttnTambah_Click(sender As Object, e As EventArgs) Handles bttnTambah.Click
         Form_input_barang.ShowDialog()
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
 End Class

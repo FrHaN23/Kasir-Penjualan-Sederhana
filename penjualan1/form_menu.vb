@@ -88,4 +88,12 @@
         End If
 
     End Sub
+
+    Private Sub pbLaporan_Click(sender As Object, e As EventArgs) 
+
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        Form_laporan.ShowDialog()
+    End Sub
 End Class

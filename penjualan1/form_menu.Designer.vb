@@ -204,9 +204,9 @@ Partial Class form_menu
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.penjualan1.My.Resources.Resources.btn_laporan
-        Me.PictureBox5.Location = New System.Drawing.Point(65, 500)
+        Me.PictureBox5.Location = New System.Drawing.Point(66, 500)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(313, 112)
+        Me.PictureBox5.Size = New System.Drawing.Size(312, 112)
         Me.PictureBox5.TabIndex = 25
         Me.PictureBox5.TabStop = False
         '

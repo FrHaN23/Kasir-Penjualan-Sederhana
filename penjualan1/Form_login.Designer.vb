@@ -37,7 +37,7 @@ Partial Class Form_login
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = Global.penjualan1.My.Resources.Resources.logo___Copy
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(374, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(355, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(136, 96)
         Me.PictureBox1.TabIndex = 2
@@ -88,7 +88,7 @@ Partial Class Form_login
         '
         'bttnHapus
         '
-        Me.bttnHapus.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnHapus.BackgroundImage = Global.penjualan1.My.Resources.Resources.btn_polos
         Me.bttnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bttnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnHapus.ForeColor = System.Drawing.Color.White
@@ -101,7 +101,7 @@ Partial Class Form_login
         '
         'bttnSimpan
         '
-        Me.bttnSimpan.BackgroundImage = Global.penjualan1.My.Resources.Resources.Warna
+        Me.bttnSimpan.BackgroundImage = Global.penjualan1.My.Resources.Resources.btn_polos
         Me.bttnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bttnSimpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bttnSimpan.ForeColor = System.Drawing.Color.White

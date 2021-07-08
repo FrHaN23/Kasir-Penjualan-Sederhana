@@ -28,20 +28,21 @@ Public Class Form_input_barang
         If txtKodeBarang.Text = "" Or txtNamaBarang.Text = "" Or txtHargaBeli.Text = "" Or txtHargaJual.Text = "" Or txtStok.Text = "" Or cmbJenisBarang.Text = "" Or cmbSatuan.Text = "" Then
             MessageBox.Show("Data Harus Diisi!")
         Else
-            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= '" & txtKodeBarang.Text & "' ", conn)
+            cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang= @kodeBarang ", conn)
+            cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
             rd = cmd.ExecuteReader
             rd.Read()
             'jika kosong
             If rd.HasRows = False Then
                 'input data
-                cmd = New OleDbCommand("INSERT INTO tbl_barang values ('" & txtKodeBarang.Text &
-                                       "', '" & txtNamaBarang.Text &
-                                       "', '" & cmbJenisBarang.Text &
-                                       "','" & cmbSatuan.Text &
-                                       "','" & txtHargaBeli.Text &
-                                       "','" & txtHargaJual.Text &
-                                       "','" & txtStok.Text &
-                                       "')", conn)
+                cmd = New OleDbCommand("INSERT INTO tbl_barang values (@kodeBarang, @namaBarang, @jenisBarang,@satuan,@hargaBeli,@hargaJual,@stok)", conn)
+                cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
+                cmd.Parameters.AddWithValue("@namaBarang", txtNamaBarang.Text)
+                cmd.Parameters.AddWithValue("@jenisBarang", cmbJenisBarang.Text)
+                cmd.Parameters.AddWithValue("@satuan", cmbSatuan.Text)
+                cmd.Parameters.AddWithValue("@hargaBeli", txtHargaBeli.Text)
+                cmd.Parameters.AddWithValue("@hargaJual", txtHargaJual.Text)
+                cmd.Parameters.AddWithValue("@stok", txtStok.Text)
                 'eksekusi queri
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Disimpan")
@@ -50,13 +51,15 @@ Public Class Form_input_barang
                 'jika kode barang ada isi, dapat di Update/edit
             Else
                 'edit
-                cmd = New OleDbCommand("UPDATE tbl_barang SET nama_barang='" & txtNamaBarang.Text &
-                                       "',jenis_barang='" & cmbJenisBarang.Text &
-                                        "',satuan_barang='" & cmbSatuan.Text &
-                                        "',harga_beli='" & txtHargaBeli.Text &
-                                        "',harga_jual='" & txtHargaJual.Text &
-                                        "',stock='" & txtStok.Text &
-                                        "' WHERE kode_barang='" & txtKodeBarang.Text & "' ", conn)
+                cmd = New OleDbCommand("UPDATE tbl_barang SET nama_barang=@namaBarang,jenis_barang=@jenisBarang,satuan_barang=@satuan,
+                                        harga_beli=@hargaBeli,harga_jual=@hargaJual,stock=@stok WHERE kode_barang=@kodeBarang", conn)
+                cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
+                cmd.Parameters.AddWithValue("@namaBarang", txtNamaBarang.Text)
+                cmd.Parameters.AddWithValue("@jenisBarang", cmbJenisBarang.Text)
+                cmd.Parameters.AddWithValue("@satuan", cmbSatuan.Text)
+                cmd.Parameters.AddWithValue("@hargaBeli", txtHargaBeli.Text)
+                cmd.Parameters.AddWithValue("@hargaJual", txtHargaJual.Text)
+                cmd.Parameters.AddWithValue("@stok", txtStok.Text)
                 cmd.ExecuteNonQuery()
                 MessageBox.Show("Data Berhasil Diubah")
                 Call clearBox()
@@ -66,7 +69,8 @@ Public Class Form_input_barang
     End Sub
     Private Sub txtKodeBarang_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBarang.TextChanged
         'panggil data
-        cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang='" & txtKodeBarang.Text & "' ", conn)
+        cmd = New OleDbCommand("SELECT * FROM tbl_barang WHERE kode_barang=@kodeBarang", conn)
+        cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
         rd = cmd.ExecuteReader
         rd.Read()
         If rd.HasRows = True Then
@@ -89,7 +93,8 @@ Public Class Form_input_barang
 
     Private Sub bttnHapus_Click(sender As Object, e As EventArgs) Handles bttnHapus.Click
         If MessageBox.Show("Apakah Anda ingin menghapus data?", "", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-            cmd = New OleDbCommand("DELETE FROM tbl_barang WHERE kode_barang='" & txtKodeBarang.Text & "'", conn)
+            cmd = New OleDbCommand("DELETE FROM tbl_barang WHERE kode_barang=@kodeBarang", conn)
+            cmd.Parameters.AddWithValue("@kodeBarang", txtKodeBarang.Text)
             cmd.ExecuteNonQuery()
             MessageBox.Show("Data berhasil dihapus.")
             Call clearBox()
